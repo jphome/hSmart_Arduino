@@ -4,7 +4,7 @@
 #include <Arduino.h>
 #define PROTOCOL     "HSP/1.0"
 #define DEVICE_ID    "201201"
-#define SENSOR_ID    "201201"
+#define SENSOR_ID    "201204"
 #define SENSOR_TYPE  "DATA"
 
 int led = 13;
@@ -36,9 +36,9 @@ void loop()
   Serial.print(DEVICE_ID);
   Serial.println(SENSOR_ID);
   Serial.println(SENSOR_TYPE);
-  Serial.println(sensors.getTempCByIndex(0));
+  Serial.println(sensors.getTempCByIndex(5));
 
-  delay(1000);
+  delay(4000);
 }
 
 
