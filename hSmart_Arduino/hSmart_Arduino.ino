@@ -5,8 +5,8 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 
-#define PROTOCOL     "HSP/1.0"       /* 协议版本号 */
-#define DEVICE_ID    "201301"        /* 设备ID */
+#define PROTOCOL     "HSP/1.0"       ///< 协议版本号
+#define DEVICE_ID    "201301"        ///< 设备ID
 #define LED_1_ID     "201301"
 #define SWITCH_1_ID  "201302"
 #define SWITCH_2_ID  "201303"
@@ -14,9 +14,9 @@
 
 #define SENSOR_TYPE_CMD    "CMD"
 #define SENSOR_TYPE_DATA   "DATA"
-#define HSMART_OK    "HSMART_OK"
+#define HSMART_OK          "HSMART_OK"
 
-/* 命令类型 */
+/// 命令类型
 #define ON     "01"
 #define OFF    "02"
 #define QUERY  "03"
@@ -84,20 +84,4 @@ ok:
     Serial.println(PROTOCOL","HSMART_OK);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
